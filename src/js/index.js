@@ -1,3 +1,2 @@
-import sub from './sub';
 console.log('bundle test');
-sub();
+document.querySelector("body").innerText= "webpack reload";
