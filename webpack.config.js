@@ -11,5 +11,7 @@ module.exports = {
     open: true,
     port: 9000,
     contentBase: './public'
-  }
+  },
+  devtool: 'cheap-module-eval-source-map'
+
 }

@@ -1,2 +1,3 @@
-// export default const sub = () => console.log('sub func');
-
+export default function sub(msg) {
+  console.log(mgs);
+}

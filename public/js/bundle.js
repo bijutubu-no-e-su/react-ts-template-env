@@ -94,7 +94,13 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/js/sub.js\");\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sub__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('bundle test');\n_sub__WEBPACK_IMPORTED_MODULE_0___default()();\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ "./src/js/sub.js");
+
+console.log('bundle test');
+Object(_sub__WEBPACK_IMPORTED_MODULE_0__["default"])('error');
+document.querySelector("body").innerText= "webpack reload";
+
 
 /***/ }),
 
@@ -102,10 +108,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub
 /*!***********************!*\
   !*** ./src/js/sub.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// export default const sub = () => console.log('sub func');\n\n\n\n//# sourceURL=webpack:///./src/js/sub.js?");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return sub; });
+function sub(msg) {
+  console.log(mgs);
+}
+
 
 /***/ })
 
