@@ -7,6 +7,15 @@ module.exports = {
     path: path.resolve(__dirname, 'public/js'),
     publicPath: '/js/'
   },
+  module: {
+    rules:[
+      {
+        test: /\.js$/,
+        loader:'babel-loader',
+        exclude:/node_modules/
+      }
+    ]
+  },
   devServer: {
     open: true,
     port: 9000,
