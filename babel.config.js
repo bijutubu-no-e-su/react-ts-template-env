@@ -6,7 +6,9 @@ module.exports = api => {
         targets: {
           ie: "11",
           chrome:"60"
-        }
+        },
+        useBuiltIns: "usage",
+        corejs:3
       }
       ]
     ]
