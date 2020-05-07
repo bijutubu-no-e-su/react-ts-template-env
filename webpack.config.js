@@ -8,11 +8,11 @@ module.exports = {
     publicPath: '/js/'
   },
   module: {
-    rules:[
+    rules: [
       {
-        test: /\.js$/,
-        loader:'babel-loader',
-        exclude:/node_modules/
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', 'eslint-loader']
       }
     ]
   },
@@ -22,5 +22,4 @@ module.exports = {
     contentBase: './public'
   },
   devtool: 'cheap-module-eval-source-map'
-
-}
+};
