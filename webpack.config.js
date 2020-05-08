@@ -8,6 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, 'public/js'),
     publicPath: '/js/'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json']
+  },
   module: {
     rules: [
       {
