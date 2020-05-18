@@ -7,15 +7,18 @@ module.exports = (api) => {
         {
           targets: {
             ie: '11',
-            chrome: '60'
+            chrome: '60',
           },
           useBuiltIns: 'usage',
-          corejs: 3
-        }
+          corejs: 3,
+        },
       ],
       '@babel/preset-react',
-      '@babel/preset-typescript'
+      '@babel/preset-typescript',
     ],
-    plugins: ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread']
+    plugins: [
+      '@babel/proposal-class-properties',
+      '@babel/proposal-object-rest-spread',
+    ],
   };
 };
