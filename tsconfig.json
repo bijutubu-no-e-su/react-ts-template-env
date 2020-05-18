@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl" : "./src",
+    "paths": {
+      "components": ["components"],
+      "containers": ["containers"],
+      "scss": ["scss"]
+    },
     /* トランスパイル後のECMAScriptのバージョン */
     "target": "esnext",
 
@@ -8,7 +14,6 @@
     "skipLibCheck":true, //型定義ファイルの型チェックをスキップする。
     "allowSyntheticDefaultImports": true, //デフォルトのエクスポートがないモジュールからのデフォルトエクスポートを許可する。
     "forceConsistentCasingInFileNames": true, //大文字小文字を区別して参照を解決するようにする。windowsは大小を区別しないが他のOSだと区別するので、意図しないエラーを出さないため。
-    "resolveJsonModule": true,
 
     /* 今回、トランスパイルは Babelが行うので、`tsc`コマンドでJavaScriptファイルを出力しないようにする */
     "noEmit": true,
