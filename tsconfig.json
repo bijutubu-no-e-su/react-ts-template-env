@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl" : "./src",
+    "baseUrl" : ".",
     "paths": {
-      "components": ["components"],
-      "containers": ["containers"],
-      "scss": ["scss"]
+      "components/*": ["src/components/*"],
+      "containers/*": ["src/containers/*"],
+      "scss/*": ["src/scss/*"],
+      "src/*": ["src/*"]
     },
     /* トランスパイル後のECMAScriptのバージョン */
     "target": "esnext",

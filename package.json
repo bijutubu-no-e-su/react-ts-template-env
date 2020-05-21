@@ -48,7 +48,15 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
-    "pretty-quick": "^2.0.1"
+    "@types/query-string": "^6.3.0",
+    "@types/react-helmet": "^6.0.0",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
+    "pretty-quick": "^2.0.1",
+    "query-string": "^6.12.1",
+    "react-helmet": "^6.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "browserslist": [
     "last 2 versions"
